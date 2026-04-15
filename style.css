@@ -1,0 +1,55 @@
+body {
+    background: radial-gradient(circle, #000000, #0a0000);
+    color: #ff0033;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    border: 1px solid #ff0033;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 30px #ff0033, inset 0 0 10px #ff0033;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 10px #ff0033; }
+    to { box-shadow: 0 0 40px #ff0033; }
+}
+
+input {
+    display: block;
+    margin: 12px auto;
+    padding: 12px;
+    background: black;
+    color: #ff0033;
+    border: 1px solid #ff0033;
+    outline: none;
+    width: 220px;
+}
+
+input:focus {
+    box-shadow: 0 0 10px #ff0033;
+}
+
+button {
+    padding: 10px 20px;
+    background: #ff0033;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #cc0029;
+}
+
+#status {
+    margin-top: 10px;
+    font-size: 14px;
+}
